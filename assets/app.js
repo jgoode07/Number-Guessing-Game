@@ -54,3 +54,9 @@ function checkGuess() {
   guessInput.value = "";
   guessInput.focus();
 }
+
+//--------------------------------------------------------------------
+//---Event Listener
+//--------------------------------------------------------------------
+// Add event listener to the button
+guessButton.addEventListener("click", checkGuess);
