@@ -73,3 +73,28 @@ h1 {
 .input:focus {
   border-color: #fff;
 }
+
+/*********** Button ***********/
+.btn {
+  padding: 0.65rem 1.25rem;
+  width: 50%;
+  border-radius: 999px;
+  border: 1px solid #fff;
+  background: #fff;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ffe5f3;
+  border: 1px solid #ffe5f3;
+  transition: all ease 0.2s;
+}
+
+/*********** Counter ***********/
+.guess-count {
+  opacity: 0.9;
+  margin: 0.9rem 0 0;
+}
