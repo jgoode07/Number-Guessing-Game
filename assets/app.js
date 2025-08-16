@@ -22,3 +22,14 @@ const countDisplay = document.getElementById("count");
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+// Function to check the user's guess
+function checkGuess() {
+  const userGuess = parseInt(guessInput.value);
+
+  // Input validation
+  if (!userGuess || userGuess < 1 || userGuess > 50) {
+    message.textContent = "Please enter a number between 1 and 50";
+    return;
+  }
+}
