@@ -14,3 +14,11 @@ const guessButton = document.getElementById("btn-guess");
 const message = document.getElementById("message");
 const currentGuessDisplay = document.getElementById("current-guess");
 const countDisplay = document.getElementById("count");
+
+//--------------------------------------------------------------------
+//--- Functions
+//--------------------------------------------------------------------
+// Function to generate a random number between/including min and max
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
