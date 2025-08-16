@@ -9,6 +9,19 @@
   <body>
     <main class="game">
       <h1>Number Guessing Game</h1>
+      <section class="card">
+        <!-- Provide dash as a placeholder before guess is made -->
+        <div class="guess-display" id="guessDisplay">–</div>
+
+        <p class="message" id="message">Guess a number between 1 and 50.</p>
+
+        <div class="controls">
+          <input id="guess" class="input" type="number" min="1" max="50" />
+          <button id="btn-guess" class="btn" type="button">GUESS</button>
+        </div>
+        <!-- Use a span to control the guess count beiing displayed -->
+        <p class="guess-count" id="countWrapper"><span id="count">0</span> guesses</p>
+      </section>
     </main>
     <script src="assets/app.js" defer></script>
   </body>
