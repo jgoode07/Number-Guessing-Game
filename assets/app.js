@@ -30,6 +30,9 @@ function checkGuess() {
   // Input validation
   if (!userGuess || userGuess < 1 || userGuess > 50) {
     message.textContent = "Please enter a number between 1 and 50";
+    // Clear input area if number isn't between 1-50
+    guessInput.value = "";
+    guessInput.focus();
     return;
   }
 
@@ -46,4 +49,8 @@ function checkGuess() {
   } else {
     message.textContent = "Congratulations! You guessed the number!";
   }
+
+  // Clear input area
+  guessInput.value = "";
+  guessInput.focus();
 }
