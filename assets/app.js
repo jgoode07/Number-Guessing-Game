@@ -32,4 +32,18 @@ function checkGuess() {
     message.textContent = "Please enter a number between 1 and 50";
     return;
   }
+
+  // Update the guess counter
+  currentGuessDisplay.textContent = userGuess;
+  guessCount++;
+  countDisplay.textContent = guessCount;
+
+  // Compare guess to secret number and update the displayed message
+  if (userGuess > secretNumber) {
+    message.textContent = "My number is smaller. Try again!";
+  } else if (userGuess < secretNumber) {
+    message.textContent = "My number is larger. Try again!";
+  } else {
+    message.textContent = "Congratulations! You guessed the number!";
+  }
 }
