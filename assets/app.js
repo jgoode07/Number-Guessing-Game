@@ -56,7 +56,14 @@ function checkGuess() {
 }
 
 //--------------------------------------------------------------------
-//---Event Listener
+//---Event Listeners
 //--------------------------------------------------------------------
 // Add event listener to the button
 guessButton.addEventListener("click", checkGuess);
+
+// Allow pressing the enter key instead of clicking the button
+guessInput.addEventListener("keydown", function (event) {
+  if (event.key === "Enter") {
+    checkGuess();
+  }
+});
