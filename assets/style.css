@@ -95,6 +95,12 @@ h1 {
 
 /*********** Counter ***********/
 .guess-count {
+  font-size: 0.8rem;  
   opacity: 0.9;
   margin: 0.9rem 0 0;
+}
+
+#count {
+  font-size: 0.9rem; 
+  font-weight: 900;   
 }

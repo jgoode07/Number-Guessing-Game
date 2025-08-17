@@ -41,6 +41,10 @@ function checkGuess() {
   guessCount++;
   countDisplay.textContent = guessCount;
 
+  // Adjust singular/plural for "guess"/"guesses" with ternary operator
+  const guessLabel = guessCount === 1 ? " guess" : " guesses";
+  document.getElementById("guess-word").textContent = guessLabel;
+
   // Compare guess to secret number and update the displayed message
   if (userGuess > secretNumber) {
     message.textContent = "My number is smaller. Try again!";
